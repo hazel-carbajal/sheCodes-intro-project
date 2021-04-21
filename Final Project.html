@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sauvignon Blanc</title>
+    <style>
+      body {
+        background-image: url("https://253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/WhatsTheDifference_GettyImages-147297690_1920x1280.jpg");
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 45px;
+        color: black;
+      }
+
+      a {
+        color: black;
+        font-weight: 200;
+        font-size: 15px;
+      }
+
+      h2,
+      p,
+      button {
+        color: black;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        word-spacing: 0.5mm;
+        font-weight: 800px;
+      }
+
+      button {
+        font-size: 20px;
+        text-align: center;
+        line-height: 25px;
+        padding: 15px 20px;
+        border: 2px solid;
+        border-radius: 30px;
+        background-color: transparent;
+        margin: 20px auto 0;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #808080;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      .box {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        text-align: center;
+        background-image: linear-gradient(to right, #d1f8b2, #f3ee9c);
+      }
+
+      .signature {
+        font-family: monospace;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box">
+        <h1>🍾 Sauvignon Blanc Wine 🍾</h1>
+
+        <img
+          src="https://media1.popsugar-assets.com/files/thumbor/AF597URTdYsiyErwdm2bM3yLR5c/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/05/31/647/n/1922729/3e9215dd5cf13ae862e6f3.98224658_GettyImages-142941209_3_/i/How-Many-Calories-Glass-Sauvignon-Blanc.jpg"
+          width="300"
+        />
+
+        <br />
+
+        <a
+          href="https://en.wikipedia.org/wiki/Sauvignon_blanc#:~:text=The%20Sauvignon%20blanc%20grape%20traces,Loire%20Valley%20and%20Bordeaux%20Regions.&text=The%20first%20cuttings%20of%20Sauvignon,vineyards%20of%20Ch%C3%A2teau%20d'Yquem."
+          target="blank"
+        >
+          Learn more about this refreshing wine here
+        </a>
+
+        <hr />
+
+        <h2>My favourite wine</h2>
+
+        <p>
+          Sauvignon blanc is a green-skinned grape variety that originates from
+          the Bordeaux region of France. The grape most likely gets its name
+          from the French words <em>sauvage</em> and <em>blanc</em> due to its
+          early origins as an indigenous grape in South West France. It is
+          possibly a descendant of Savagnin. It is planted in many of the
+          world's wine regions, producing a crisp, dry, and refreshing white
+          varietal wine.
+          <br />
+          Depending on the climate, the flavor can range from aggressively
+          grassy to sweetly tropical. In cooler climates, the grape has a
+          tendency to produce wines with noticeable acidity and "green flavors"
+          of grass, green bell peppers and nettles with some tropical fruit such
+          as, passion fruit, and floral such as, elderflower notes. In warmer
+          climates, it can develop more tropical fruit notes but risks losing
+          much aroma from over-ripeness, leaving only slight grapefruit and tree
+          fruit such as, peach notes.
+          <br />
+          <br />
+          <strong> Wine Regions</strong>
+          <br />
+          Sauvignon Blanc grapes are grown in the following regions of the
+          world: France, Australia, Chile, Brazil, New Zealand and North
+          America.
+        </p>
+
+        <button class="order">Order Now</button>
+
+        <p class="signature">Coded by Hazel Carbajal</p>
+      </div>
+    </section>
+    <script>
+      function orderNow() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+
+        if (age >= 18) {
+          alert("Hi " + name + "! You can order wine 🍷");
+        } else {
+          alert("Hi " + name + "! Sorry but you can't order wine 😿");
+        }
+      }
+
+      let orderNowButton = document.querySelector("button");
+      orderNowButton.addEventListener("click", orderNow);
+    </script>
+  </body>
+</html>
